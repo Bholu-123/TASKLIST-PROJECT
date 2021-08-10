@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #272829;
+    font-weight: 400;
+}
+
+.card-content{
+  padding: 2rem;
+  padding-top: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+  width: 60%;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 
+              0 1px 5px 0 rgb(0 0 0 / 12%), 
+              0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+
+.card-content .main-heading{
+   display: block;
+   font-size: 3rem;
+   font-weight: lighter;
+}
+
+#addTask .TaskinputField{
+  position: relative;
+  margin-top: 3rem;
+}
+
+#addTask .TaskinputField input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(97, 126, 118);
+  font-size: 1.5rem;
+  padding: .5rem;
+  margin-bottom: 1.5rem;
+  transition: .5sec;
+}
+
+#addTask .TaskinputField input:focus{
+  border-bottom: 2px solid #26a69a;
+}
+
+#addTask .TaskinputField label{
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  font-size: 1.5rem;
+  transition: .5s;
+}
+
+#addTask .TaskinputField input:focus ~ label,
+#addTask .TaskinputField input:valid ~ label
+{
+   left: 0rem;
+   top: -2rem;
+   font-size: 1.5rem;
+   color: #26a69a;
+}
+
+#addTaskBtn{
+  display: block;
+   border: none;
+   outline: none;
+   background-color: #26a69a;
+   padding: 1rem 3rem;
+   color: white;
+   font-size: 1.4rem;
+   text-transform: uppercase;
+   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%);
+}
+
+.card-action{
+  padding: 2rem;
+  padding-top: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+  width: 60%;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 
+              0 1px 5px 0 rgb(0 0 0 / 12%), 
+              0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+
+.card-action .main-heading{
+   display: block;
+   font-size: 3rem;
+   font-weight: lighter;
+}
+
+#FilterTask .FilterinputField{
+  position: relative;
+  margin-top: 3rem;
+}
+
+#FilterTask .FilterinputField input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(97, 126, 118);
+  font-size: 1.5rem;
+  padding: .5rem;
+  margin-bottom: 1.5rem;
+  transition: .5sec;
+}
+
+#FilterTask .FilterinputField input:focus{
+  border-bottom: 2px solid #26a69a;
+}
+
+#FilterTask .FilterinputField label{
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  font-size: 1.5rem;
+  transition: .5s;
+}
+
+#FilterTask .FilterinputField input:focus ~ label,
+#FilterTask .FilterinputField input:valid ~ label
+{
+   left: 0rem;
+   top: -2rem;
+   font-size: 1.5rem;
+   color: #26a69a;
+}
+
+#ClearTaskBtn{
+   display: inline-block;
+   border: none;
+   outline: none;
+   background-color: #222525;
+   padding: 1rem 3rem;
+   color: white;
+   font-size: 1.4rem;
+   text-transform: uppercase;
+   text-decoration: none;
+   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%);
+}
+
+.collection{
+    margin: .5rem 0 1rem 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.collection .collection-item{
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.collection .collection-item .delete-item{
+   float: right;
+   color: rgb(255, 0, 242);
+   font-size: 1.5rem;
+}

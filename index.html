@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TASKLIST</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card-content">
+                <span class="main-heading">Task List</span>
+                <form id="addTask">
+                    <div class="TaskinputField">
+                        <input class="newTask" type="text" id="newTask" name="newTask">
+                        <label for="newTask">New Task</label>
+                    </div>
+                    <input type="submit" id="addTaskBtn" value="Add Task">
+                </form>
+            </div>
+            <div class="card-action">
+                <span class="main-heading">Tasks</span>
+                <form id="FilterTask">
+                    <div class="FilterinputField">
+                        <input class="FilterTask" type="text" id="FilterTask" name="FilterTask">
+                        <label for="FilterTask">Filter Task</label>
+                    </div>
+                </form>
+                <ul class="collection"></ul>
+                <a href="#" id="ClearTaskBtn" >Clear Task</a>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
